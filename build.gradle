@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:8.7.2'
     }
 }
 
@@ -21,6 +21,7 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.uberspot.a2048"
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
 
@@ -63,5 +64,5 @@ android {
 }
 
 dependencies {
-    implementation 'de.cketti.library.changelog:ckchangelog-legacy-dialog:2.0.0-SNAPSHOT'
+    // implementation 'de.cketti.library.changelog:ckchangelog-legacy-dialog:2.0.0-SNAPSHOT'
 }
